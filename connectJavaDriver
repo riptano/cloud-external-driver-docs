@@ -1,0 +1,181 @@
+<head>
+<body>
+<div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="collapse col-lg-3 col-md-3 col-sm-12 d-md-block" style="">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="dscloudClusterConnection-d50e177" class="topicref" data-id="dscloudClusterConnection" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action dscloudClusterConnection-d50e177-link" class="wh-expand-btn"></span><span class="title"><a href="../../dscloud/apollo/dscloudClusterConnection.html" id="dscloudClusterConnection-d50e177-link">Connecting to databases</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Use database connection information to connect to databases using DataStax Studio,     CQLSH, or by using a sample application.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="dscloudConnectStudio-d50e188" class="topicref" data-id="dscloudConnectStudio" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action dscloudConnectStudio-d50e188-link" class="wh-expand-btn"></span><span class="title"><a href="../../dscloud/apollo/dscloudConnectStudio.html" id="dscloudConnectStudio-d50e188-link">Using Developer Studio</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Use DataStax Developer Studio to connect with Apollo databases created using the         DataStax Cloud console.</p></span></span></span></li><li role="treeitem"><span data-tocid="dscloudConnectcqlshStandalone-d50e232" class="topicref" data-id="dscloudConnectcqlshStandalone" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../../dscloud/apollo/dscloudConnectcqlshStandalone.html" id="dscloudConnectcqlshStandalone-d50e232-link">Using standalone CQLSH</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Use the standalone CQLSH tool to interact with your database through CQL         commands.</p></span></span></span></li><li role="treeitem"><span data-tocid="dscloudConnectcqlsh-d50e244" class="topicref" data-id="dscloudConnectcqlsh" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../../dscloud/apollo/dscloudConnectcqlsh.html" id="dscloudConnectcqlsh-d50e244-link">Using native CQLSH</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Configure CQLSH to log in to an Apollo database and run CQL commands.</p></span></span></span></li><li role="treeitem" aria-expanded="true"><span data-tocid="dscloudUsingDseDrivers-d50e256" class="topicref" data-id="dscloudUsingDseDrivers" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action dscloudUsingDseDrivers-d50e256-link" class="wh-expand-btn"></span><span class="title"><a href="../../dscloud/apollo/dscloudUsingDrivers.html" id="dscloudUsingDseDrivers-d50e256-link">Connecting with DataStax drivers</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Use one of the DataStax drivers to connect to your Apollo database.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="dscloudConnectCplusDriver-d50e267" class="topicref" data-id="dscloudConnectCplusDriver" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../../dscloud/apollo/dscloudConnectCplusDriver.html" id="dscloudConnectCplusDriver-d50e267-link">C++ driver</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Use the DataStax C++ driver to connect to your database created using the DataStax         Cloud console.</p></span></span></span></li><li role="treeitem"><span data-tocid="dscloudConnectCsharpDriver-d50e278" class="topicref" data-id="dscloudConnectCsharpDriver" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../../dscloud/apollo/dscloudConnectCsharpDriver.html" id="dscloudConnectCsharpDriver-d50e278-link">C# driver</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Use the DataStax C# driver to connect to your database created using the DataStax         Cloud console.</p></span></span></span></li><li role="treeitem" class="active"><span data-tocid="dscloudConnectJavaDriver-d50e289" class="topicref" data-id="dscloudConnectJavaDriver" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../../dscloud/apollo/dscloudConnectJavaDriver.html" id="dscloudConnectJavaDriver-d50e289-link">Java driver</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Use the DataStax Java driver to connect to your database created using the DataStax         Cloud console.</p></span></span></span></li><li role="treeitem"><span data-tocid="dscloudConnectNodeJsDriver-d50e300" class="topicref" data-id="dscloudConnectNodeJsDriver" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../../dscloud/apollo/dscloudConnectNodeJsDriver.html" id="dscloudConnectNodeJsDriver-d50e300-link">Node.js driver</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Use the DataStax Node.js driver to connect to your database created using the         DataStax Cloud console.</p></span></span></span></li><li role="treeitem"><span data-tocid="dscloudConnectPythonDriver-d50e311" class="topicref" data-id="dscloudConnectPythonDriver" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../../dscloud/apollo/dscloudConnectPythonDriver.html" id="dscloudConnectPythonDriver-d50e311-link">Python driver</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Use the DataStax Python driver to connect to your cluster created using the DataStax         Cloud console.</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="dscloudMigratingDseDrivers-d50e322" class="topicref" data-id="dscloudMigratingDseDrivers" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action dscloudMigratingDseDrivers-d50e322-link" class="wh-expand-btn"></span><span class="title"><a href="../../dscloud/apollo/dscloudMigratingDseDrivers.html" id="dscloudMigratingDseDrivers-d50e322-link">Migrating DataStax drivers</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Migrate your DataStax driver to a version that can connect to Cassandra     databases.</p></span></span></span></li></ul></li></ul></li></ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Connecting to your database with the DataStax Java driver</h1>
+    
+    
+    <div class="body taskbody"><p class="shortdesc">Use the DataStax Java driver to connect to your database created using the DataStax
+        Cloud console.</p>
+        <section class="section context">
+            <p class="p">Use the unified DataStax Java driver to connect to your Apollo database and begin
+                building your own application.</p>
+            <p class="p">You add a repository and dependencies to the <span class="ph filepath">pom.xml</span> file for
+                your project to download the appropriate .jar files for the Java driver and make
+                them available to your code. Additionally, you implement a
+                    <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">ConnectDatabase</code> class to initialize the DSE Java driver.</p>
+            <div class="note tip note_tip"><span class="note__title">Tip:</span> DataStax recommends using the unified DataStax Java driver. If you have
+                an existing Apache Cassandra or DataStax Enterprise (DSE) Java driver, <a class="xref" href="dscloudMigrateJavaDriver.html" title="Migrate your existing DataStax Java driver to a version compatible with Cassandra databases.">migrate the driver</a> to a version that
+                is capable of connecting to Apollo databases.</div>
+        </section>
+        <section class="section prereq"><div class="tasklabel"><h2 class="sectiontitle tasklabel">Prerequisites</h2></div>
+            <ol class="ol">
+                <li class="li"><a class="xref" href="https://maven.apache.org/download.cgi" target="_blank">Download</a> and <a class="xref" href="https://maven.apache.org/install.html" target="_blank">install</a> Maven.</li>
+                <li class="li"><a class="xref" href="dscloudObtainingCredentials.html" title="Download the connection credentials for your Apollo database.">Download the
+                        secure connect bundle</a> to obtain connection credentials for your
+                    DataStax Apollo database.<div class="note tip note_tip"><span class="note__title">Tip:</span> Alternatively, <a class="xref" href="dscloudShareClusterDetails.html" title="Provide other members of your team with access to an Apollo database.">have a teammate provide access to
+                            their Apollo database</a>.</div></li>
+            </ol>
+        </section>
+        <div class="tasklabel"><h2 class="sectiontitle tasklabel">Procedure</h2></div><ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Navigate to the <span class="ph filepath">pom.xml</span> file at the root of your Java
+                    project and open it for editing.</span>
+                <div class="itemgroup info">
+                    <div class="note tip note_tip"><span class="note__title">Tip:</span> For a complete <span class="ph filepath">pom.xml</span> file, see the <a class="xref" href="dscloudConnectJavaDriver.html#dscloudConnectJavaDriver__pomXmlExample">Example pom.xml
+                            file</a>.</div>
+                </div>
+                <ol type="a" class="ol substeps">
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">Add the DataStax Java driver dependency to your
+                                <span class="ph filepath">pom.xml</span> file, ensuring that the name of the
+                            dependency corresponds to the installed version:</span>
+                        <div class="itemgroup info">
+                            <p class="p">This dependency causes Maven to automatically download the
+                                appropriate .jar files found at the <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">url</code> specified
+                                in the <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">repository</code> for the DSE Java driver and make
+                                them available to your code.</p>
+                            <pre data-swiftype-name="codeblock" data-swiftype-type="text" class="pre codeblock language-java hljs"><code>&lt;dependency&gt;
+  &lt;groupId&gt;com.datastax.oss&lt;/groupId&gt;
+  &lt;artifactId&gt;java-driver-core&lt;/artifactId&gt;
+  &lt;version&gt;<span class="hljs-number">4.4</span>.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+                        </div>
+                    </li>
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">Save and close your <span class="ph filepath">pom.xml</span> file.</span>
+                    </li>
+                </ol>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Initialize the DataStax Java driver.</span>
+                <ol type="a" class="ol substeps">
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">Create a <span class="ph filepath">ConnectDatabase.java</span> file in the
+                                <span class="ph filepath">/src/main/java</span> directory for your Java
+                            project.</span>
+                        <div class="itemgroup info">
+                            <pre class="pre screen language-bash hljs"><span class="hljs-built_in">cd</span> <var class="keyword varname">javaProject</var>/src/main/java</pre>
+                            <pre class="pre screen language-bash hljs">touch ConnectDatabase.java</pre>
+                        </div>
+                    </li>
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">Copy the following code for your DataStax driver into the
+                                <span class="ph filepath">ConnectDatabase.java</span> file.</span>
+                        <div class="itemgroup info">
+                            <p class="p">The following example implements a <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">ConnectDatabase</code>
+                                class to connect to your Apollo database, runs a CQL query, and
+                                prints the output to the console.</p>
+                            <div class="p">Make the following changes:<ul class="ul">
+                                    <li class="li">Use the <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">withCloudSecureConnectBundle()</code>
+                                        method to specify the path to the secure connect bundle for
+                                        your Apollo database.</li>
+                                    <li class="li">Use the <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">withAuthCredentials()</code> method to
+                                        specify the username and password for your database.</li>
+                                    <li class="li">Use the <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">withKeyspace()</code> method to specify
+                                        the keyspace name for your database.</li>
+                                </ul></div>
+                            <pre data-swiftype-name="codeblock" data-swiftype-type="text" class="pre codeblock language-java hljs"><code><span class="hljs-keyword">import</span> com.datastax.oss.driver.api.core.CqlSession;
+<span class="hljs-keyword">import</span> com.datastax.oss.driver.api.core.cql.ResultSet;
+<span class="hljs-keyword">import</span> com.datastax.oss.driver.api.core.cql.Row;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ConnectDatabase</span> </span>{
+
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+       <span class="hljs-comment">// Create the CqlSession object:</span>
+       <span class="hljs-keyword">try</span> (CqlSession session = CqlSession.builder()
+           .withCloudSecureConnectBundle(Paths.get(<span class="hljs-string">"</span><var class="keyword varname"><span class="hljs-string">/path/to/</span></var><span class="hljs-string">secure-connect-</span><var class="keyword varname"><span class="hljs-string">database_name</span></var><span class="hljs-string">.zip"</span>))
+           .withAuthCredentials(<span class="hljs-string">"</span><var class="keyword varname"><span class="hljs-string">username</span></var><span class="hljs-string">"</span>,<span class="hljs-string">"</span><var class="keyword varname"><span class="hljs-string">password</span></var><span class="hljs-string">"</span>)
+           .withKeyspace(<span class="hljs-string">"</span><var class="keyword varname"><span class="hljs-string">keyspace_name</span></var><span class="hljs-string">"</span>)
+           .build()) {
+           <span class="hljs-comment">// Select the release_version from the system.local table:</span>
+           ResultSet rs = session.execute(<span class="hljs-string">"select release_version from system.local"</span>);
+           Row row = rs.one();
+           <span class="hljs-comment">//Print the results of the CQL query to the console:</span>
+           <span class="hljs-keyword">if</span> (row != <span class="hljs-keyword">null</span>) {
+               System.out.println(row.getString(<span class="hljs-string">"release_version"</span>));
+           } <span class="hljs-keyword">else</span> {
+               System.out.println(<span class="hljs-string">"An error occurred."</span>);
+           }
+       }
+       System.exit(<span class="hljs-number">0</span>);
+   }
+}
+</code></pre>
+                        </div>
+                    </li>
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">Save and close the <span class="ph filepath">ConnectDatabase.java</span>
+                            file.</span>
+                    </li>
+                </ol>
+            </li></ol>
+        <section class="example" id="dscloudConnectJavaDriver__pomXmlExample"><h2 class="title sectiontitle collapseOnLoad clickableTitle" id="Examplepom.xmlfile" style="cursor: pointer;"><span class="wh_expand_btn" role="button" aria-expanded="true" tabindex="0" aria-label="Collapse"></span>Example pom.xml file</h2>
+            
+            <p class="p" style="display: none;">You can use the following <span class="ph filepath">pom.xml</span> file in your Java project to
+                connect to your Apollo database. If you already have a <span class="ph filepath">pom.xml</span>
+                file for your Java project, copy only the repository and dependencies as indicated
+                in the previous steps.</p>
+            <pre data-swiftype-name="codeblock" data-swiftype-type="text" class="pre codeblock language-java hljs" style="display: none;"><code>&lt;?xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"UTF-8"</span>?&gt;
+&lt;project xmlns=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0"</span> xmlns:xsi=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span> xsi:schemaLocation=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;
+    &lt;modelVersion&gt;<span class="hljs-number">4.0</span>.0&lt;/modelVersion&gt;
+    &lt;groupId&gt;net.techne.web&lt;/groupId&gt;
+    &lt;artifactId&gt;cloudTest&lt;/artifactId&gt;
+    &lt;version&gt;<span class="hljs-number">1.0</span>&lt;/version&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+    &lt;properties&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-<span class="hljs-number">8</span>&lt;/project.build.sourceEncoding&gt;
+        &lt;maven.compiler.source&gt;<span class="hljs-number">1.8</span>&lt;/maven.compiler.source&gt;
+        &lt;maven.compiler.target&gt;<span class="hljs-number">1.8</span>&lt;/maven.compiler.target&gt;
+    &lt;/properties&gt;
+    &lt;dependencies&gt;
+        &lt;!-- START-javaDriverDependencyCore --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.datastax.dse&lt;/groupId&gt;
+            &lt;artifactId&gt;dse-java-driver-core&lt;/artifactId&gt;
+            &lt;version&gt;<span class="hljs-number">2.3</span>.0&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;!-- END-javaDriverDependencyCore --&gt;
+        &lt;!-- START-javaDriverDependencyQuery --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.datastax.dse&lt;/groupId&gt;
+            &lt;artifactId&gt;dse-java-driver-query-builder&lt;/artifactId&gt;
+            &lt;version&gt;<span class="hljs-number">2.3</span>.0&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;!-- END-javaDriverDependencyQuery --&gt;
+    &lt;/dependencies&gt;
+&lt;/project&gt;</code></pre>
+        </section>
+        <section class="section postreq"><div class="tasklabel"><h2 class="sectiontitle tasklabel">What's next</h2></div>
+            <p class="p">Build your application. See the <a class="xref" href="/en/developer/java-driver/latest/" target="_blank">DataStax Java driver</a> documentation for
+                more information about using the DataStax Java driver.</p>
+        </section>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+         </body>
+         </head>
