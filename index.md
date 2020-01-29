@@ -1,1 +1,165 @@
-# Main page
+<head>
+<body>
+<div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Connecting to your database with the DataStax Java driver</h1>
+    
+    
+    <div class="body taskbody"><p class="shortdesc">Use the DataStax Java driver to connect to your database created using the DataStax
+        Cloud console.</p>
+        <section class="section context">
+            <p class="p">Use the unified DataStax Java driver to connect to your Apollo database and begin
+                building your own application.</p>
+            <p class="p">You add a repository and dependencies to the <span class="ph filepath">pom.xml</span> file for
+                your project to download the appropriate .jar files for the Java driver and make
+                them available to your code. Additionally, you implement a
+                    <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">ConnectDatabase</code> class to initialize the DSE Java driver.</p>
+            <div class="note tip note_tip"><span class="note__title">Tip:</span> DataStax recommends using the unified DataStax Java driver. If you have
+                an existing Apache Cassandra or DataStax Enterprise (DSE) Java driver, <a class="xref" href="dscloudMigrateJavaDriver.html" title="Migrate your existing DataStax Java driver to a version compatible with Cassandra databases.">migrate the driver</a> to a version that
+                is capable of connecting to Apollo databases.</div>
+        </section>
+        <section class="section prereq"><div class="tasklabel"><h2 class="sectiontitle tasklabel">Prerequisites</h2></div>
+            <ol class="ol">
+                <li class="li"><a class="xref" href="https://maven.apache.org/download.cgi" target="_blank">Download</a> and <a class="xref" href="https://maven.apache.org/install.html" target="_blank">install</a> Maven.</li>
+                <li class="li"><a class="xref" href="dscloudObtainingCredentials.html" title="Download the connection credentials for your Apollo database.">Download the
+                        secure connect bundle</a> to obtain connection credentials for your
+                    DataStax Apollo database.<div class="note tip note_tip"><span class="note__title">Tip:</span> Alternatively, <a class="xref" href="dscloudShareClusterDetails.html" title="Provide other members of your team with access to an Apollo database.">have a teammate provide access to
+                            their Apollo database</a>.</div></li>
+            </ol>
+        </section>
+        <div class="tasklabel"><h2 class="sectiontitle tasklabel">Procedure</h2></div><ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Navigate to the <span class="ph filepath">pom.xml</span> file at the root of your Java
+                    project and open it for editing.</span>
+                <div class="itemgroup info">
+                    <div class="note tip note_tip"><span class="note__title">Tip:</span> For a complete <span class="ph filepath">pom.xml</span> file, see the <a class="xref" href="dscloudConnectJavaDriver.html#dscloudConnectJavaDriver__pomXmlExample">Example pom.xml
+                            file</a>.</div>
+                </div>
+                <ol type="a" class="ol substeps">
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">Add the DataStax Java driver dependency to your
+                                <span class="ph filepath">pom.xml</span> file, ensuring that the name of the
+                            dependency corresponds to the installed version:</span>
+                        <div class="itemgroup info">
+                            <p class="p">This dependency causes Maven to automatically download the
+                                appropriate .jar files found at the <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">url</code> specified
+                                in the <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">repository</code> for the DSE Java driver and make
+                                them available to your code.</p>
+                            <pre data-swiftype-name="codeblock" data-swiftype-type="text" class="pre codeblock language-java"><code>&lt;dependency&gt;
+  &lt;groupId&gt;com.datastax.oss&lt;/groupId&gt;
+  &lt;artifactId&gt;java-driver-core&lt;/artifactId&gt;
+  &lt;version&gt;4.4.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+                        </div>
+                    </li>
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">Save and close your <span class="ph filepath">pom.xml</span> file.</span>
+                    </li>
+                </ol>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Initialize the DataStax Java driver.</span>
+                <ol type="a" class="ol substeps">
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">Create a <span class="ph filepath">ConnectDatabase.java</span> file in the
+                                <span class="ph filepath">/src/main/java</span> directory for your Java
+                            project.</span>
+                        <div class="itemgroup info">
+                            <pre class="pre screen language-bash">cd <var class="keyword varname">javaProject</var>/src/main/java</pre>
+                            <pre class="pre screen language-bash">touch ConnectDatabase.java</pre>
+                        </div>
+                    </li>
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">Copy the following code for your DataStax driver into the
+                                <span class="ph filepath">ConnectDatabase.java</span> file.</span>
+                        <div class="itemgroup info">
+                            <p class="p">The following example implements a <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">ConnectDatabase</code>
+                                class to connect to your Apollo database, runs a CQL query, and
+                                prints the output to the console.</p>
+                            <div class="p">Make the following changes:<ul class="ul">
+                                    <li class="li">Use the <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">withCloudSecureConnectBundle()</code>
+                                        method to specify the path to the secure connect bundle for
+                                        your Apollo database.</li>
+                                    <li class="li">Use the <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">withAuthCredentials()</code> method to
+                                        specify the username and password for your database.</li>
+                                    <li class="li">Use the <code data-swiftype-name="codeph" data-swiftype-type="text" class="ph codeph">withKeyspace()</code> method to specify
+                                        the keyspace name for your database.</li>
+                                </ul></div>
+                            <pre data-swiftype-name="codeblock" data-swiftype-type="text" class="pre codeblock language-java"><code>import com.datastax.oss.driver.api.core.CqlSession;
+import com.datastax.oss.driver.api.core.cql.ResultSet;
+import com.datastax.oss.driver.api.core.cql.Row;
+
+public class ConnectDatabase {
+
+   public static void main(String[] args) {
+       // Create the CqlSession object:
+       try (CqlSession session = CqlSession.builder()
+           .withCloudSecureConnectBundle(Paths.get("<var class="keyword varname">/path/to/</var>secure-connect-<var class="keyword varname">database_name</var>.zip"))
+           .withAuthCredentials("<var class="keyword varname">username</var>","<var class="keyword varname">password</var>")
+           .withKeyspace("<var class="keyword varname">keyspace_name</var>")
+           .build()) {
+           // Select the release_version from the system.local table:
+           ResultSet rs = session.execute("select release_version from system.local");
+           Row row = rs.one();
+           //Print the results of the CQL query to the console:
+           if (row != null) {
+               System.out.println(row.getString("release_version"));
+           } else {
+               System.out.println("An error occurred.");
+           }
+       }
+       System.exit(0);
+   }
+}
+</code></pre>
+                        </div>
+                    </li>
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">Save and close the <span class="ph filepath">ConnectDatabase.java</span>
+                            file.</span>
+                    </li>
+                </ol>
+            </li></ol>
+        <section class="example" id="dscloudConnectJavaDriver__pomXmlExample"><h2 class="title sectiontitle collapseOnLoad">Example pom.xml file</h2>
+            
+            <p class="p">You can use the following <span class="ph filepath">pom.xml</span> file in your Java project to
+                connect to your Apollo database. If you already have a <span class="ph filepath">pom.xml</span>
+                file for your Java project, copy only the repository and dependencies as indicated
+                in the previous steps.</p>
+            <pre data-swiftype-name="codeblock" data-swiftype-type="text" class="pre codeblock language-java"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;groupId&gt;net.techne.web&lt;/groupId&gt;
+    &lt;artifactId&gt;cloudTest&lt;/artifactId&gt;
+    &lt;version&gt;1.0&lt;/version&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+    &lt;properties&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+        &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;
+        &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;
+    &lt;/properties&gt;
+    &lt;dependencies&gt;
+        &lt;!-- START-javaDriverDependencyCore --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.datastax.dse&lt;/groupId&gt;
+            &lt;artifactId&gt;dse-java-driver-core&lt;/artifactId&gt;
+            &lt;version&gt;2.3.0&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;!-- END-javaDriverDependencyCore --&gt;
+        &lt;!-- START-javaDriverDependencyQuery --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.datastax.dse&lt;/groupId&gt;
+            &lt;artifactId&gt;dse-java-driver-query-builder&lt;/artifactId&gt;
+            &lt;version&gt;2.3.0&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;!-- END-javaDriverDependencyQuery --&gt;
+    &lt;/dependencies&gt;
+&lt;/project&gt;</code></pre>
+        </section>
+        <section class="section postreq"><div class="tasklabel"><h2 class="sectiontitle tasklabel">What's next</h2></div>
+            <p class="p">Build your application. See the <a class="xref" href="/en/developer/java-driver/latest/" target="_blank">DataStax Java driver</a> documentation for
+                more information about using the DataStax Java driver.</p>
+        </section>
+    </div>
+</article></main></div>
+</body>
+</head>
