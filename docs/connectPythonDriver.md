@@ -19,7 +19,7 @@ Procedure
     pip install cassandra-driver
     ```
 
-    See the [Python driver installation instructions](/en/developer/python-dse-driver/latest/installation/) for more information.
+    See the [Python driver installation instructions](https://docs.datastax.com/en/developer/python-dse-driver/latest/installation/) for more information.
 
 2.  Verify that the DataStax Python driver installed successfully:
 

@@ -6,11 +6,7 @@ Use the unified DataStax C++ driver to connect to your Apollo database and begin
 Prerequisites
 -------------
 
-1.  [Download the secure connect bundle](dscloudObtainingCredentials.html "Download the connection credentials for your Apollo database.") to obtain connection credentials for your DataStax Apollo database.
-
-    Tip: Alternatively, [have a teammate provide access to their Apollo database](dscloudShareClusterDetails.html "Provide other members of your team with access to an Apollo database.").
-
-2.  Download the DataStax C++ driver and dependency packages for your platform using the links in the following table.
+1.  Download the DataStax C++ driver and dependency packages for your platform using the links in the following table.
 
     Table 1. DataStax C++ driver download links
 
@@ -24,7 +20,7 @@ Prerequisites
     | Windows      | [Driver](https://downloads.datastax.com/cpp-driver//windows/cassandra/) | [Dependencies](https://downloads.datastax.com/cpp-driver//windows/dependencies/)           |
     | Other        | Other platforms should build the driver from the [source code packages](https://github.com/datastax/cpp-driver).                                                     |
 
-3.  Using the packages you downloaded, follow the [installation instructions](https://docs.datastax.com/en/developer/cpp-driver/latest/topics/installation/) for your platform to install the DataStax C++ driver.
+2.  Using the packages you downloaded, follow the <a href="https://docs.datastax.com/en/developer/cpp-driver/latest/topics/installation/" target="_blank">installation instructions</a> for your platform to install the DataStax C++ driver.
 
 Procedure
 ---------
