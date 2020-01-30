@@ -43,13 +43,13 @@ Procedure
 
   *  Copy the following code for your DataStax driver into the ConnectDatabase.java file.
 
-    The following example implements a `ConnectDatabase` class to connect to your Apollo database, runs a CQL query, and prints the output to the console.
+The following example implements a `ConnectDatabase` class to connect to your Apollo database, runs a CQL query, and prints the output to the console.
 
-    Make the following changes:
+Make the following changes:
 
-     *   Use the `withCloudSecureConnectBundle()` method to specify the path to the secure connect bundle for your Apollo database.
-     *   Use the `withAuthCredentials()` method to specify the username and password for your database.
-     *   Use the `withKeyspace()` method to specify the keyspace name for your database.
+  *   Use the `withCloudSecureConnectBundle()` method to specify the path to the secure connect bundle for your Apollo database.
+  *   Use the `withAuthCredentials()` method to specify the username and password for your database.
+  *   Use the `withKeyspace()` method to specify the keyspace name for your database.
 
   ```javascript
       import com.datastax.oss.driver.api.core.CqlSession;
