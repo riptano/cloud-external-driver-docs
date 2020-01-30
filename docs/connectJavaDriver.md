@@ -8,7 +8,7 @@ You add a repository and dependencies to the pom.xml file for your project to do
 Prerequisites
 -------------
 
-[Download](https://maven.apache.org/download.cgi) and [install](https://maven.apache.org/install.html) Maven.
+<a href="https://maven.apache.org/download.cgi" target="_blank">Download</a> and <a href="https://maven.apache.org/install.html" target="_blank">install</a> Maven.
 
 
 Procedure
@@ -16,7 +16,7 @@ Procedure
 
 1.  Navigate to the `pom.xml` file at the root of your Java project and open it for editing.
 
-    Tip: For a complete pom.xml file, see the [Example pom.xml file](#example-pom.xml-file).
+    Tip: For a complete pom.xml file, see the example pom.xml file below.
 
     -   Add the DataStax Java driver dependency to your pom.xml file, ensuring that the name of the dependency corresponds to the installed version:
 
@@ -36,11 +36,11 @@ Procedure
 
     -   Create a ConnectDatabase.java file in the `/src/main/java` directory for your Java project.
 
-        ```
+        ```bash
         cd javaProject/src/main/java
         ```
 
-        ```
+        ```bash
         touch ConnectDatabase.java
         ```
     -   Copy the following code for your DataStax driver into the ConnectDatabase.java file.

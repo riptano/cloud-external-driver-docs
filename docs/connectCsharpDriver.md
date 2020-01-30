@@ -6,7 +6,7 @@ Use the unified DataStax C# driver to connect to your Apollo database and begin 
 Prerequisites
 -------------
 
-[Download](https://dotnet.microsoft.com/download/dotnet-core) and [install](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script) the current version of the .NET Core SDK.
+<a href="https://dotnet.microsoft.com/download/dotnet-core" target="_blank">Download</a> and <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script" target="_blank">install</a> the current version of the .NET Core SDK.
 
 
 Procedure

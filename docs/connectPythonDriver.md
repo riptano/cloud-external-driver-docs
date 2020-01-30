@@ -8,7 +8,7 @@ Prerequisites
 
 Download and install a supported Python version. Python 2.7, 3.4, 3.5 and 3.6 are supported.
 
-**Note**: [CPython](https://www.python.org/) (the standard Python implementation) and [PyPy](http://pypy.org/) are supported and tested.
+**Note**: <a href="https://www.python.org/" target="_blank">CPython</a> and <a href="http://pypy.org/" target="_blank">PyPy</a> are supported and tested.
 
 Procedure
 ---------
@@ -19,7 +19,7 @@ Procedure
     pip install cassandra-driver
     ```
 
-    See the [Python driver installation instructions](https://docs.datastax.com/en/developer/python-dse-driver/latest/installation/) for more information.
+    See the <a href="https://docs.datastax.com/en/developer/python-dse-driver/latest/installation/" target="_blank">Python driver installation instructions</a> for more information.
 
 2.  Verify that the DataStax Python driver installed successfully:
 
@@ -59,7 +59,7 @@ Procedure
     session = cluster.connect()
     ```
 
-5.  After the connection code, add the following code to `connect-database.py`. This code creates a `Cluster` instance to connect to your Apollo database, runs a CQL query, and prints the output to the console. As the name suggests, you will typically have one instance of [`Cluster`](https://docs.datastax.com/en/developer/python-dse-driver/2.11/api/dse/cluster/#dse.cluster.Cluster) for each Cassandra cluster you want to interact with.
+5.  After the connection code, add the following code to `connect-database.py`. This code creates a `Cluster` instance to connect to your Apollo database, runs a CQL query, and prints the output to the console. As the name suggests, you will typically have one instance of <a href="https://docs.datastax.com/en/developer/python-dse-driver/2.11/api/dse/cluster/#dse.cluster.Cluster" target="_blank">Cluster</a> for each Cassandra cluster you want to interact with.
 
     ```
     row = session.execute("select release_version from system.local").one()
