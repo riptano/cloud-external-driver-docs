@@ -20,7 +20,7 @@ Procedure
 
     Tip: For a complete pom.xml file, see the [Example pom.xml file](#example-pom.xml-file).
 
-    *  Add the DataStax Java driver dependency to your pom.xml file, ensuring that the name of the dependency corresponds to the installed version:
+  *  Add the DataStax Java driver dependency to your pom.xml file, ensuring that the name of the dependency corresponds to the installed version:
 
      This dependency causes Maven to automatically download the appropriate .jar files found at the `url` specified in the `repository` for the DSE Java driver and make them available to your code.
 
@@ -34,9 +34,8 @@ Procedure
 
   * Save and close your `pom.xml` file.
 
-
 2.  Initialize the DataStax Java driver.
-  *  Create a ConnectDatabase.java file in the /src/main/java directory for your Java project.
+  *  Create a ConnectDatabase.java file in the `/src/main/java` directory for your Java project.
 
         `cd javaProject/src/main/java`
 
@@ -44,15 +43,15 @@ Procedure
 
   *  Copy the following code for your DataStax driver into the ConnectDatabase.java file.
 
-        The following example implements a `ConnectDatabase` class to connect to your Apollo database, runs a CQL query, and prints the output to the console.
+    The following example implements a `ConnectDatabase` class to connect to your Apollo database, runs a CQL query, and prints the output to the console.
 
-        Make the following changes:
+    Make the following changes:
 
-        *   Use the `withCloudSecureConnectBundle()` method to specify the path to the secure connect bundle for your Apollo database.
-        *   Use the `withAuthCredentials()` method to specify the username and password for your database.
-        *   Use the `withKeyspace()` method to specify the keyspace name for your database.
+     *   Use the `withCloudSecureConnectBundle()` method to specify the path to the secure connect bundle for your Apollo database.
+     *   Use the `withAuthCredentials()` method to specify the username and password for your database.
+     *   Use the `withKeyspace()` method to specify the keyspace name for your database.
 
-   ```
+  ```javascript
       import com.datastax.oss.driver.api.core.CqlSession;
       import com.datastax.oss.driver.api.core.cql.ResultSet;
       import com.datastax.oss.driver.api.core.cql.Row;
@@ -88,7 +87,7 @@ Example pom.xml file
 
 You can use the following pom.xml file in your Java project to connect to your Apollo database. If you already have a pom.xml file for your Java project, copy only the repository and dependencies as indicated in the previous steps.
 
-   ```
+   ```javascript
     <?xml version="1.0" encoding="UTF-8"?>
     <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <modelVersion>4.0.0</modelVersion>
