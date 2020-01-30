@@ -55,8 +55,7 @@ Procedure
     -   Use the `withAuthCredentials()` method to specify the username and password for your database.
     -   Use the `withKeyspace()` method to specify the keyspace name for your database.
 
-
-  ```javascript
+    ```javascript
       import com.datastax.oss.driver.api.core.CqlSession;
       import com.datastax.oss.driver.api.core.cql.ResultSet;
       import com.datastax.oss.driver.api.core.cql.Row;
@@ -83,7 +82,7 @@ Procedure
             System.exit(0);
        }
     }
-   ```
+    ```
 
 3.  Save and close the ConnectDatabase.java file.
 
@@ -127,4 +126,4 @@ You can use the following pom.xml file in your Java project to connect to your A
 What's next
 -----------
 
-Build your application. See the [DataStax Java driver](/en/developer/java-driver/latest/) documentation for more information about using the DataStax Java driver.
+Build your application. See the [DataStax Java driver](https://docs.datastax.com/en/developer/java-driver/latest/) documentation for more information about using the DataStax Java driver.
