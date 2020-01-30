@@ -6,6 +6,6 @@ Index
 
 [Connecting the Java driver](docs/connectJavaDriver.md)
 
-[Connecting the Node.js driver](docs/connectJavaDriver.md)
+[Connecting the Node.js driver](docs/connectNodejsDriver.md)
 
-[Connecting the Python driver](docs/connectJavaDriver.md)
+[Connecting the Python driver](docs/connectPythonDriver.md)

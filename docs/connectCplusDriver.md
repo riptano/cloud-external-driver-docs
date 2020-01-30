@@ -24,17 +24,18 @@ Prerequisites
     | Windows      | [Driver](https://downloads.datastax.com/cpp-driver//windows/cassandra/) | [Dependencies](https://downloads.datastax.com/cpp-driver//windows/dependencies/)           |
     | Other        | Other platforms should build the driver from the [source code packages](https://github.com/datastax/cpp-driver).                                                     |
 
-3.  Using the packages you downloaded, follow the [installation instructions](/en/developer/cpp-driver/latest/topics/installation/) for your platform to install the DataStax C++ driver.
+3.  Using the packages you downloaded, follow the [installation instructions](https://docs.datastax.com/en/developer/cpp-driver/latest/topics/installation/) for your platform to install the DataStax C++ driver.
 
 Procedure
 ---------
 
 1.  Create a `connect_database.c` file in the main directory for your C++ project.
 
-    ```
+    ```bash
     cd my_project
     ```
-    ```
+
+    ```bash
     touch connect_database.c
     ```
 
@@ -44,7 +45,7 @@ Procedure
 
     **Note**: The `cass_cluster_set_contact_points()` and `cass_cluster_set_ssl()` methods should not used in conjunction with the `cass_cluster_set_cloud_secure_connection_bundle()` method.
 
-    ```
+    ```c++
     #include <cassandra.h>
     #include <stdio.h>
 
@@ -85,7 +86,7 @@ Procedure
 
         **Note**: For static linking, use `cassandra_static.a`.
 
-        ```
+        ```c++
         cc connect-database.c -I/path/to/cassandra.h -L/path/to/cassandra.so -lcassandra
         ```
 
@@ -101,41 +102,36 @@ Procedure
 
     This code creates a `CassStatement` object to connect to your Apollo database, runs a CQL query, and prints the output to the console.
 
-    ```
-    /* Build statement and execute query /*
-    const char\* query = "SELECT release\_version FROM system.local";
-    CassStatement\* statement = cass\_statement\_new(query, 0);
+    ```c++
+    /* Build statement and execute query */
+    const char* query = "SELECT release_version FROM system.local";
+    CassStatement* statement = cass_statement_new(query, 0);
 
-    CassFuture\* result\_future = cass\_session\_execute(session, statement);
+    CassFuture* result_future = cass_session_execute(session, statement);
 
-    if (cass\_future\_error\_code(result\_future) == CASS\_OK) {
-      /\* Retrieve result set and get the first row \*/
-      const CassResult\* result = cass\_future\_get\_result(result\_future);
-      const CassRow\* row = cass\_result\_first\_row(result);
+    if (cass_future_error_code(result_future) == CASS_OK) {
+      /* Retrieve result set and get the first row */
+      const CassResult* result = cass_future_get_result(result_future);
+      const CassRow* row = cass_result_first_row(result);
 
       if (row) {
-        const CassValue\* value = cass\_row\_get\_column\_by\_name(row, "release\_version");
+        const CassValue* value = cass_row_get_column_by_name(row, "release_version");
 
-        const char\* release\_version;
-        size\_t release\_version\_length;
-        cass\_value\_get\_string(value, &release\_version, &release\_version\_length);
-        printf("release\_version: '%.\*s'\\n", (int)release\_version\_length, release\_version);
+        const char* release_version;
+        size_t release_version_length;
+        cass_value_get_string(value, &release_version, &release_version_length);
+        printf("release_version: '%.*s'\n", (int)release_version_length, release_version);
       }
 
-     cass\_result\_free(result);
+     cass_result_free(result);
      } else {
-      /\* Handle error \*/
-      const char\* message;
-      size\_t message\_length;
-      cass\_future\_error\_message(result\_future, &message, &message\_length);
-      fprintf(stderr, "Unable to run query: '%.\*s'\\n", (int)message\_length, message);
+      /* Handle error */
+      const char* message;
+      size_t message_length;
+      cass_future_error_message(result_future, &message, &message_length);
+      fprintf(stderr, "Unable to run query: '%.*s'\n", (int)message_length, message);
      }
 
-    cass\_statement\_free(statement);
-    cass\_future\_free(result\_future);
+    cass_statement_free(statement);
+    cass_future_free(result_future);
     ```
-
-What's next
------------
-
-Build your application. See the [DataStax C++ driver](https://docs.datastax.com/en/developer/cpp-driver-dse/1.10/features/cloud/) documentation for more information about using the DataStax C++ driver.

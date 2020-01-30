@@ -1,8 +1,6 @@
 Connecting to your database with the DataStax Java driver
 =========================================================
 
-Use the DataStax Java driver to connect to your database created using the DataStax Cloud console.
-
 Use the unified DataStax Java driver to connect to your Apollo database and begin building your own application.
 
 You add a repository and dependencies to the pom.xml file for your project to download the appropriate .jar files for the Java driver and make them available to your code. Additionally, you implement a `ConnectDatabase` class to initialize the DSE Java driver.
@@ -91,7 +89,7 @@ Example pom.xml file
 
 You can use the following pom.xml file in your Java project to connect to your Apollo database. If you already have a pom.xml file for your Java project, copy only the repository and dependencies as indicated in the previous steps.
 
-   ```javascript
+   ```
     <?xml version="1.0" encoding="UTF-8"?>
     <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <modelVersion>4.0.0</modelVersion>
@@ -122,8 +120,3 @@ You can use the following pom.xml file in your Java project to connect to your A
         </dependencies>
     </project>
    ```
-
-What's next
------------
-
-Build your application. See the [DataStax Java driver](https://docs.datastax.com/en/developer/java-driver/latest/) documentation for more information about using the DataStax Java driver.
