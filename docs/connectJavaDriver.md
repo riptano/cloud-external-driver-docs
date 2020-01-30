@@ -23,13 +23,13 @@ Procedure
 
      This dependency causes Maven to automatically download the appropriate .jar files found at the `url` specified in the `repository` for the DSE Java driver and make them available to your code.
 
-   ```
-   <dependency>
-       <groupId>com.datastax.oss</groupId>
-       <artifactId>java-driver-core</artifactId>
-       <version>4.4.0</version>
-   </dependency>
-   ```
+      ```
+      <dependency>
+          <groupId>com.datastax.oss</groupId>
+          <artifactId>java-driver-core</artifactId>
+          <version>4.4.0</version>
+      </dependency>
+      ```
 
   * Save and close your `pom.xml` file.
 
@@ -79,7 +79,8 @@ Procedure
        }
     }
    ```
-    3.  Save and close the ConnectDatabase.java file.
+
+3.  Save and close the ConnectDatabase.java file.
 
 Example pom.xml file
 --------------------
