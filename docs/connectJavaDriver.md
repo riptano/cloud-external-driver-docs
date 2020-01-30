@@ -19,7 +19,8 @@ Procedure
 1.  Navigate to the `pom.xml` file at the root of your Java project and open it for editing.
 
     Tip: For a complete pom.xml file, see the [Example pom.xml file](#example-pom.xml-file).
- *  Add the DataStax Java driver dependency to your pom.xml file, ensuring that the name of the dependency corresponds to the installed version:
+
+    *  Add the DataStax Java driver dependency to your pom.xml file, ensuring that the name of the dependency corresponds to the installed version:
 
      This dependency causes Maven to automatically download the appropriate .jar files found at the `url` specified in the `repository` for the DSE Java driver and make them available to your code.
 
