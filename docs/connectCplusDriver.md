@@ -1,7 +1,7 @@
 Connecting to your database with the DataStax C++ driver
 ========================================================
 
-Use the unified DataStax C++ driver to connect to your Apollo database and begin building your own application.
+Use the unified DataStax C++ driver to connect to your Apollo database and begin building your own application.                                                   |
 
 Prerequisites
 -------------
@@ -12,13 +12,13 @@ Prerequisites
 
     | Platform     | Download links                                                                                                                                                       |
     |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | CentOS 6     | [Driver](https://downloads.datastax.com/cpp-driver//centos/6/cassandra/) | [Dependencies](https://downloads.datastax.com/cpp-driver//centos/6/dependencies/)         |
-    | CentOS 7     | [Driver](https://downloads.datastax.com/cpp-driver//centos/7/cassandra/) | [Dependencies](https://downloads.datastax.com/cpp-driver//centos/7/dependencies/)         |
-    | Ubuntu 14.04 | [Driver](https://downloads.datastax.com/cpp-driver//ubuntu/14.04/cassandra/) | [Dependencies](https://downloads.datastax.com/cpp-driver//ubuntu/14.04/dependencies/) |
-    | Ubuntu 16.04 | [Driver](https://downloads.datastax.com/cpp-driver//ubuntu/16.04/cassandra/) | [Dependencies](https://downloads.datastax.com/cpp-driver//ubuntu/16.04/dependencies/) |
-    | Ubuntu 18.04 | [Driver](https://downloads.datastax.com/cpp-driver//ubuntu/18.04/cassandra/) | [Dependencies](https://downloads.datastax.com/cpp-driver//ubuntu/18.04/dependencies/) |
-    | Windows      | [Driver](https://downloads.datastax.com/cpp-driver//windows/cassandra/) | [Dependencies](https://downloads.datastax.com/cpp-driver//windows/dependencies/)           |
-    | Other        | Other platforms should build the driver from the [source code packages](https://github.com/datastax/cpp-driver).                                                     |
+    | CentOS 6     | <a href="https://downloads.datastax.com/cpp-driver//centos/6/cassandra/" target="_blank">Driver</a> | <a href="https://downloads.datastax.com/cpp-driver//centos/6/dependencies/" target="_blank">Dependencies</a> |
+    | CentOS 7     | <a href="https://downloads.datastax.com/cpp-driver//centos/7/cassandra/" target="_blank">Driver</a> | <a href="https://downloads.datastax.com/cpp-driver//centos/7/dependencies/" target="_blank">Dependencies</a> |
+    | Ubuntu 14.04 | <a href="https://downloads.datastax.com/cpp-driver//ubuntu/14.04/cassandra/" target="_blank">Driver</a> | <a href="https://downloads.datastax.com/cpp-driver//ubuntu/14.04/dependencies/" target="_blank">Dependencies</a> |
+    | Ubuntu 16.04 | <a href="https://downloads.datastax.com/cpp-driver//ubuntu/16.04/cassandra/" target="_blank">Driver</a> | <a href="https://downloads.datastax.com/cpp-driver//ubuntu/16.04/dependencies/" target="_blank">Dependencies</a> |
+    | Ubuntu 18.04 | <a href="https://downloads.datastax.com/cpp-driver//ubuntu/18.04/cassandra/" target="_blank">Driver</a> | <a href="https://downloads.datastax.com/cpp-driver//ubuntu/18.04/dependencies/" target="_blank">Dependencies</a> |
+    | Windows      | <a href="https://downloads.datastax.com/cpp-driver//ubuntu/18.04/cassandra/" target="_blank">Driver</a> | <a href="https://downloads.datastax.com/cpp-driver//ubuntu/18.04/dependencies/" target="_blank">Dependencies</a> |
+    | Other platforms | Other platforms should build the driver from the <a href="https://github.com/datastax/cpp-driver" target="_blank">source code</a> |  |
 
 2.  Using the packages you downloaded, follow the <a href="https://docs.datastax.com/en/developer/cpp-driver/latest/topics/installation/" target="_blank">installation instructions</a> for your platform to install the DataStax C++ driver.
 
