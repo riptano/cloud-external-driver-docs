@@ -20,9 +20,9 @@ Procedure
 
     Tip: For a complete pom.xml file, see the [Example pom.xml file](#example-pom.xml-file).
 
-  *  Add the DataStax Java driver dependency to your pom.xml file, ensuring that the name of the dependency corresponds to the installed version:
+    -   Add the DataStax Java driver dependency to your pom.xml file, ensuring that the name of the dependency corresponds to the installed version:
 
-     This dependency causes Maven to automatically download the appropriate .jar files found at the `url` specified in the `repository` for the DSE Java driver and make them available to your code.
+    This dependency causes Maven to automatically download the appropriate .jar files found at the `url` specified in the `repository` for the DSE Java driver and make them available to your code.
 
       ```
       <dependency>
@@ -32,24 +32,29 @@ Procedure
       </dependency>
       ```
 
-  * Save and close your `pom.xml` file.
+    -   Save and close your `pom.xml` file.
 
 2.  Initialize the DataStax Java driver.
-  *  Create a ConnectDatabase.java file in the `/src/main/java` directory for your Java project.
 
-        `cd javaProject/src/main/java`
+    -   Create a ConnectDatabase.java file in the `/src/main/java` directory for your Java project.
 
-        `touch ConnectDatabase.java`
+        ```
+        cd javaProject/src/main/java
+        ```
 
-  *  Copy the following code for your DataStax driver into the ConnectDatabase.java file.
+        ```
+        touch ConnectDatabase.java
+        ```
+    -   Copy the following code for your DataStax driver into the ConnectDatabase.java file.
 
-The following example implements a `ConnectDatabase` class to connect to your Apollo database, runs a CQL query, and prints the output to the console.
+    The following example implements a `ConnectDatabase` class to connect to your Apollo database, runs a CQL query, and prints the output to the console.
 
-Make the following changes:
+    Make the following changes:
 
-  *   Use the `withCloudSecureConnectBundle()` method to specify the path to the secure connect bundle for your Apollo database.
-  *   Use the `withAuthCredentials()` method to specify the username and password for your database.
-  *   Use the `withKeyspace()` method to specify the keyspace name for your database.
+    -   Use the `withCloudSecureConnectBundle()` method to specify the path to the secure connect bundle for your Apollo database.
+    -   Use the `withAuthCredentials()` method to specify the username and password for your database.
+    -   Use the `withKeyspace()` method to specify the keyspace name for your database.
+
 
   ```javascript
       import com.datastax.oss.driver.api.core.CqlSession;
