@@ -1,7 +1,7 @@
 Connecting to your database with the DataStax Java driver
 =========================================================
 
-Use the unified DataStax Java driver to connect to your Apollo database and begin building your own application.
+Use the unified DataStax Java driver to connect to your Astra database and begin building your own application.
 
 You add a repository and dependencies to the pom.xml file for your project to download the appropriate .jar files for the Java driver and make them available to your code. Additionally, you implement a `ConnectDatabase` class to initialize the DSE Java driver.
 
@@ -45,11 +45,11 @@ Procedure
         ```
     -   Copy the following code for your DataStax driver into the ConnectDatabase.java file.
 
-    The following example implements a `ConnectDatabase` class to connect to your Apollo database, runs a CQL query, and prints the output to the console.
+    The following example implements a `ConnectDatabase` class to connect to your Astra database, runs a CQL query, and prints the output to the console.
 
     Make the following changes:
 
-    -   Use the `withCloudSecureConnectBundle()` method to specify the path to the secure connect bundle for your Apollo database.
+    -   Use the `withCloudSecureConnectBundle()` method to specify the path to the secure connect bundle for your Astra database.
     -   Use the `withAuthCredentials()` method to specify the username and password for your database.
     -   Use the `withKeyspace()` method to specify the keyspace name for your database.
 
@@ -87,7 +87,7 @@ Procedure
 Example pom.xml file
 --------------------
 
-You can use the following pom.xml file in your Java project to connect to your Apollo database. If you already have a pom.xml file for your Java project, copy only the repository and dependencies as indicated in the previous steps.
+You can use the following pom.xml file in your Java project to connect to your Astra database. If you already have a pom.xml file for your Java project, copy only the repository and dependencies as indicated in the previous steps.
 
    ```
     <?xml version="1.0" encoding="UTF-8"?>

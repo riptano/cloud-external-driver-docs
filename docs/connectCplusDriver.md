@@ -1,7 +1,7 @@
 Connecting to your database with the DataStax C++ driver
 ========================================================
 
-Use the unified DataStax C++ driver to connect to your Apollo database and begin building your own application.
+Use the unified DataStax C++ driver to connect to your Astra database and begin building your own application.
 
 Prerequisites
 -------------
@@ -37,7 +37,7 @@ Procedure
 
 2.  Copy the following connection code into the `connect_database.c` file.
 
-    The `secure_connect_bundle` must include the absolute path to your Apollo database credentials (`secure-connect-database_name.zip`).
+    The `secure_connect_bundle` must include the absolute path to your Astra database credentials (`secure-connect-database_name.zip`).
 
     **Note**: The `cass_cluster_set_contact_points()` and `cass_cluster_set_ssl()` methods should not used in conjunction with the `cass_cluster_set_cloud_secure_connection_bundle()` method.
 
@@ -94,9 +94,9 @@ Procedure
 
         Link your application against `cassandra.lib`. Your application will also require `cassandra.dll` to be in your runtime path.
 
-4.  After connecting to your Apollo database, use the following code to query your database.
+4.  After connecting to your Astra database, use the following code to query your database.
 
-    This code creates a `CassStatement` object to connect to your Apollo database, runs a CQL query, and prints the output to the console.
+    This code creates a `CassStatement` object to connect to your Astra database, runs a CQL query, and prints the output to the console.
 
     ```c++
     /* Build statement and execute query */

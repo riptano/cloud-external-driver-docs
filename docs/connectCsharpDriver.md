@@ -1,7 +1,7 @@
 Connecting to your database with the C# driver
 ==============================================
 
-Use the unified DataStax C# driver to connect to your Apollo database and begin building your own application.
+Use the unified DataStax C# driver to connect to your Astra database and begin building your own application.
 
 Prerequisites
 -------------
@@ -32,9 +32,9 @@ Procedure
         dotnet add package CassandraCSharpDriver -v 3.13.0
         ```
 
-    -   Replace the code in Program.cs with the following code to connect to your Apollo database.
+    -   Replace the code in Program.cs with the following code to connect to your Astra database.
 
-        **Note**: Include the absolute path to the secure connect bundle for your Apollo database (`secure-connect-database_name.zip`) in the `WithCloudSecureConnectionBundle` method call, and your credentials in the `WithCredentials` method call, as shown in the following examples.
+        **Note**: Include the absolute path to the secure connect bundle for your Astra database (`secure-connect-database_name.zip`) in the `WithCloudSecureConnectionBundle` method call, and your credentials in the `WithCredentials` method call, as shown in the following examples.
 
         ```csharp
         using System;

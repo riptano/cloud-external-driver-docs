@@ -1,7 +1,7 @@
 Connecting to your database with the DataStax Node.js driver
 ============================================================
 
-Use the unified DataStax Node.js driver to connect to your Apollo database and begin building your own application.
+Use the unified DataStax Node.js driver to connect to your Astra database and begin building your own application.
 
 Prerequisites
 -------------
@@ -37,7 +37,7 @@ Procedure
     const { Client } = require('cassandra-driver');
     ```
 
-4.  After the `Client` class, add the following code to `connect-database.js`. This code creates a `Client` instance to connect to your Apollo database, runs a CQL query, and prints the output to the console.
+4.  After the `Client` class, add the following code to `connect-database.js`. This code creates a `Client` instance to connect to your Astra database, runs a CQL query, and prints the output to the console.
 
     ```javascript
     async function run() {

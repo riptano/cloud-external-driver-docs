@@ -1,7 +1,7 @@
 Connecting to your database with the DataStax Python driver
 ===========================================================
 
-Use the unified DataStax Python driver to connect to your Apollo database and begin building your own application.
+Use the unified DataStax Python driver to connect to your Astra database and begin building your own application.
 
 Prerequisites
 -------------
@@ -45,7 +45,7 @@ Procedure
 
 4.  Copy the following connection code into the `connect_database.py` file.
 
-    **Note**: Set the `cloud_config` parameter for the `Cluster` initialization as shown in the following example. The `secure_connect_bundle` must include the absolute path to your Apollo database credentials (`secure-connect-database_name.zip`).
+    **Note**: Set the `cloud_config` parameter for the `Cluster` initialization as shown in the following example. The `secure_connect_bundle` must include the absolute path to your Astra database credentials (`secure-connect-database_name.zip`).
 
     ```python
     from cassandra.cluster import Cluster
@@ -59,7 +59,7 @@ Procedure
     session = cluster.connect()
     ```
 
-5.  After the connection code, add the following code to `connect-database.py`. This code creates a `Cluster` instance to connect to your Apollo database, runs a CQL query, and prints the output to the console. As the name suggests, you will typically have one instance of <a href="https://docs.datastax.com/en/developer/python-dse-driver/2.11/api/dse/cluster/#dse.cluster.Cluster" target="_blank">Cluster</a> for each Cassandra cluster you want to interact with.
+5.  After the connection code, add the following code to `connect-database.py`. This code creates a `Cluster` instance to connect to your Astra database, runs a CQL query, and prints the output to the console. As the name suggests, you will typically have one instance of <a href="https://docs.datastax.com/en/developer/python-dse-driver/2.11/api/dse/cluster/#dse.cluster.Cluster" target="_blank">Cluster</a> for each Cassandra cluster you want to interact with.
 
     ```
     row = session.execute("select release_version from system.local").one()
