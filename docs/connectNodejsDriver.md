@@ -6,7 +6,7 @@ Use the unified DataStax Node.js driver to connect to your Astra database and be
 Prerequisites
 -------------
 
-[Download](https://nodejs.org/en/download/) and install a current Node.js LTS version with `npm`.
+<a href="https://nodejs.org/en/download/" target="_blank">Download</a> and install a current Node.js LTS version with `npm`.
 
 Procedure
 ---------
