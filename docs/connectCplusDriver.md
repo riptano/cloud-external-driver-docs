@@ -37,8 +37,6 @@ Procedure
 
 2.  Copy the following connection code into the `connect_database.c` file.
 
-    The `secure_connect_bundle` must include the absolute path to your Astra database credentials (`secure-connect-database_name.zip`).
-
     **Note**: The `cass_cluster_set_contact_points()` and `cass_cluster_set_ssl()` methods should not used in conjunction with the `cass_cluster_set_cloud_secure_connection_bundle()` method.
 
     ```c++
@@ -76,6 +74,7 @@ Procedure
           return 0;
         }
     ```
+3.  In the `connect_database.c` file, replace the `secure_connect_bundle` variable with the absolute path to your Astra database credentials (`secure-connect-database_name.zip`). You download this bundle **after** configuring the DataStax C++ Driver. 
 
 3.  Build and link your application against the DataStax C++ driver.
     *   Linux or macOS
@@ -93,6 +92,8 @@ Procedure
         Note: For static linking, use `cassandra_static.lib`.
 
         Link your application against `cassandra.lib`. Your application will also require `cassandra.dll` to be in your runtime path.
+
+4.  Click **Keep Going** to proceed in this workflow and download the secure connect bundle for your database.
 
 4.  After connecting to your Astra database, use the following code to query your database.
 
